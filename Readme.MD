@@ -44,7 +44,7 @@ combineJSON().catch(console.error);
 
 ## Update Script in package.json:
 Make sure the script in package.json is correct:
-```
+```json
  "scripts": {
     "combine-json": "node src/combine/combined.js",
     "server": "npm run combine-json && json-server --watch src/combine/combined.json --port 8000"
@@ -63,7 +63,7 @@ Make sure the script in package.json is correct:
 
 ## Run JSON Server:
 Now you can run JSON Server with the command:
-```
+```bash
 npm run server
 //or
 pnpm run server
