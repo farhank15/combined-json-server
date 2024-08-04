@@ -1,13 +1,12 @@
 # Combined Json-Server
 
 ## Create Dir src/combine/combined.js
-Pastikan struktur folder Anda seperti ini:
+Make sure your folder structure looks like this:
 ```
 project-root
 ├── src
 │   ├── combine
 │   │   └── combine-json.js
-│   │   └── combined.json (output file)
 ├── package.json
 
 ```
@@ -36,6 +35,24 @@ async function combineJSON() {
 }
 
 combineJSON().catch(console.error);
-
-
 ```
+
+## Update Script in package.json:
+Make sure the script in package.json is correct:
+```
+ "scripts": {
+    "combine-json": "node src/combine/combined.js",
+    "server": "npm run combine-json && json-server --watch src/combine/combined.json --port 8000"
+  },
+```
+
+## Run JSON Server:
+Now you can run JSON Server with the command:
+```
+npm run server
+//or
+phpm run server
+//or
+bun server
+```
+
