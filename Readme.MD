@@ -6,12 +6,12 @@ Make sure your folder structure looks like this:
 project-root
 ├── src
 │   ├── combine
-│   │   └── combine-json.js
+│   │   └── combined.js
 ├── package.json
 
 ```
-## Contents of combine-json.js: 
-Contents of the combine-json.js file in the src/combine folder:
+## Contents of combined.js: 
+Contents of the combined.js file in the src/combine folder:
 ```javascript
 import { promises as fs } from "fs";
 import path from "path";
@@ -59,5 +59,17 @@ npm run server
 phpm run server
 //or
 bun server
+```
+
+## Output file combined.json:
+The output result in the src/combine/combined.json file directory is like this:
+```
+project-root
+├── src
+│   ├── combine
+│   │   └── combined.js
+│   │   └── combined.json (output file)
+├── package.json
+
 ```
 
