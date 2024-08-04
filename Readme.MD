@@ -9,7 +9,7 @@ project-root
 │   │   └── combined.js
 ├── package.json
 ```
-## Contents of combined.js: 
+## Contents of combined.js
 Contents of the combined.js file in the src/combine folder:
 ```javascript
 import { promises as fs } from "fs";
@@ -40,7 +40,7 @@ async function combineJSON() {
 combineJSON().catch(console.error);
 ```
 
-## Update "Scripts" in package.json:
+## Update "Scripts" in package.json
 Make sure the script in package.json is correct:
 ```json
 //if use npm
@@ -60,7 +60,7 @@ Make sure the script in package.json is correct:
   },
 ```
 
-## Run JSON Server:
+## Run JSON Server
 Now you can run JSON Server with the command:
 ```javascript
 npm run server
@@ -70,7 +70,7 @@ pnpm run server
 bun server
 ```
 
-## Output file combined.json:
+## Output file combined.json
 The output result in the src/combine/combined.json file directory is like this:
 ```
 project-root
@@ -82,7 +82,7 @@ project-root
 ```
 
 ## Access API
-api access on the following endpoints
+api access on the following endpoints:
 ```bash
 http://localhost:8000/
 ```
