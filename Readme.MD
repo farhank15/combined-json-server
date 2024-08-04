@@ -63,7 +63,7 @@ Make sure the script in package.json is correct:
 
 ## Run JSON Server:
 Now you can run JSON Server with the command:
-```bash
+```powrshell
 npm run server
 //or
 pnpm run server
