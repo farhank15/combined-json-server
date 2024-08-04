@@ -42,7 +42,7 @@ async function combineJSON() {
 combineJSON().catch(console.error);
 ```
 
-## Update "Script" in package.json:
+## Update "Scripts" in package.json:
 Make sure the script in package.json is correct:
 ```json
 //if use npm
