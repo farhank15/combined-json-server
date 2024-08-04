@@ -49,6 +49,16 @@ Make sure the script in package.json is correct:
     "combine-json": "node src/combine/combined.js",
     "server": "npm run combine-json && json-server --watch src/combine/combined.json --port 8000"
   },
+//or if use pnpm
+ "scripts": {
+    "combine-json": "node src/combine/combined.js",
+    "server": "pnpm run combine-json && json-server --watch src/combine/combined.json --port 8000"
+  },
+// or if use bun
+ "scripts": {
+    "combine-json": "node src/combine/combined.js",
+    "server": "bun combine-json && json-server --watch src/combine/combined.json --port 8000"
+  },
 ```
 
 ## Run JSON Server:
