@@ -56,7 +56,7 @@ Now you can run JSON Server with the command:
 ```
 npm run server
 //or
-phpm run server
+pnpm run server
 //or
 bun server
 ```
