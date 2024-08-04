@@ -8,7 +8,6 @@ project-root
 │   ├── combine
 │   │   └── combined.js
 ├── package.json
-
 ```
 ## Contents of combined.js: 
 Contents of the combined.js file in the src/combine folder:
@@ -38,7 +37,6 @@ async function combineJSON() {
     JSON.stringify(combinedData, null, 2)
   );
 }
-
 combineJSON().catch(console.error);
 ```
 
@@ -81,6 +79,10 @@ project-root
 │   │   └── combined.js
 │   │   └── combined.json (output file)
 ├── package.json
-
 ```
 
+## Access API
+api access on the following endpoints
+```bash
+http://localhost:8000/
+```
